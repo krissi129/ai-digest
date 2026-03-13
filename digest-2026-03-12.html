@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Talent Digest — Thursday, March 12, 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      background: #f7f7f5;
+      color: #1a1a1a;
+      line-height: 1.65;
+    }
+    .header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #1a1a1a;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+    .header .meta {
+      font-size: 13px;
+      color: #888;
+    }
+    .section-header {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #999;
+      margin: 36px 0 14px;
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-bottom: 10px;
+    }
+    .item-title {
+      font-size: 15px;
+      font-weight: 650;
+      line-height: 1.35;
+      margin-bottom: 7px;
+    }
+    .item-title a {
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .item-title a:hover { border-color: #1a1a1a; }
+    .item-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+    .badge-research  { background: #e6f4e6; color: #1e7e1e; }
+    .badge-recruiting { background: #e6edf8; color: #1a47a0; }
+    .badge-leadership { background: #fdf0e0; color: #9a5500; }
+    .badge-roles     { background: #f2e8f8; color: #6a1aaa; }
+    .badge-ai        { background: #fde8e8; color: #aa1a1a; }
+    .badge-podcast   { background: #e0f5f5; color: #0a7a7a; }
+    .badge-toppick   { background: #1a1a1a; color: #fff; }
+    .badge-repeat    { background: #f5f5f0; color: #888; }
+    .zone-divider {
+      margin: 40px 0 0;
+      padding: 16px 20px;
+      background: #f0efe8;
+      border-radius: 10px;
+      border: 1px solid #e4e2d8;
+    }
+    .zone-divider h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: #555;
+      margin: 0 0 3px;
+    }
+    .zone-divider p {
+      font-size: 12px;
+      color: #999;
+      margin: 0;
+    }
+    .repeat-item {
+      background: #fafaf7;
+      border: 1px solid #e8e6dc;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 10px;
+    }
+    .first-seen { font-size: 11px; color: #bbb; margin-left: 2px; }
+    .listen-item {
+      background: #fff;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .listen-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .listen-body { flex: 1; }
+    .listen-title {
+      font-size: 15px;
+      font-weight: 650;
+      line-height: 1.35;
+      margin-bottom: 5px;
+    }
+    .listen-title a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+    .listen-title a:hover { border-color: #1a1a1a; }
+    .listen-meta { font-size: 12px; color: #aaa; margin-bottom: 8px; }
+    .listen-summary { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 8px; }
+    .listen-why { font-size: 13px; color: #777; font-style: italic; border-left: 3px solid #e8e8e8; padding-left: 12px; }
+    .source-date {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .summary {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .why {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.55;
+      border-left: 3px solid #e8e8e8;
+      padding-left: 12px;
+      font-style: italic;
+    }
+    .why strong { color: #555; font-style: normal; }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e8e8e8;
+      font-size: 11px;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>AI Talent Digest</h1>
+    <div class="meta">Thursday, March 12, 2026 &nbsp;·&nbsp; 12 items &nbsp;·&nbsp; ranked by relevance</div>
+  </div>
+
+  <!-- ZONE 1: NEW TODAY -->
+
+  <div class="section-header">Research &amp; Reports</div>
+
+  <!-- TOP PICK -->
+  <div class="item">
+    <div class="item-title"><a href="https://hbr.org/2026/03/research-how-ai-is-changing-the-labor-market">Research: How AI Is Changing the Labor Market</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="badge badge-toppick">Top Pick</span>
+      <span class="source-date">Harvard Business Review · March 2026</span>
+    </div>
+    <p class="summary">A new HBR research piece synthesizes recent empirical findings on AI's net labor market effects, examining where job displacement is already measurable, which skills are holding premium, and what patterns are emerging across industries. The research distinguishes between automation of tasks vs. elimination of roles, finding that hybrid human-AI workflows are outperforming pure automation across most knowledge work categories. Entry-level white-collar roles face the most structural pressure, while demand is surging for workers who can direct and evaluate AI output.</p>
+    <p class="why"><strong>Why it matters:</strong> This is the data you want before every founder conversation — it gives you a grounded answer when startup clients ask whether they should be hiring humans or AI agents for knowledge work roles in 2026.</p>
+  </div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://www.kornferry.com/insights/featured-topics/talent-recruitment/ai-in-recruitment-trends">TA Trends 2026: Human–AI Power Couple</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="source-date">Korn Ferry · 2026</span>
+    </div>
+    <p class="summary">Korn Ferry's major annual TA research report finds that 84% of talent leaders worldwide plan to use AI in hiring in 2026, and over half say they'll add autonomous AI agents directly to their recruiting teams — not just as tools, but as team members with defined roles. The report identifies a "human-AI power couple" dynamic as the winning pattern: organizations where humans set strategy and AI handles high-volume execution are outperforming on time-to-hire, candidate quality, and recruiter retention. Candidate fraud and AI-generated applications are emerging as the top threats to hiring quality.</p>
+    <p class="why"><strong>Why it matters:</strong> When startup founders ask you what their TA function should look like in 2026, this report gives you the benchmark data — and the "AI as team member" framing is a concrete model you can walk early-stage clients through.</p>
+  </div>
+
+  <!-- THOUGHT LEADERSHIP -->
+  <div class="section-header">Thought Leadership</div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://www.oneusefulthing.org/p/the-shape-of-the-thing">The Shape of the Thing</a></div>
+    <div class="item-meta">
+      <span class="badge badge-leadership">Thought Leadership</span>
+      <span class="source-date">Ethan Mollick · March 12, 2026</span>
+    </div>
+    <p class="summary">Published today, Mollick argues we've entered a qualitatively new era where AI agents — systems like Claude Code and OpenAI Codex — can take multi-hour tasks and return completed work in minutes. The key shift isn't productivity enhancement; it's that the human role has moved from doing work alongside AI to managing AI that does the work. This changes what good management looks like: the highest-leverage skill is now knowing what to assign, how to evaluate output, and when to push back on AI results.</p>
+    <p class="why"><strong>Why it matters:</strong> This piece is practically speaking-deck material — the "managing AI vs. working with AI" reframe is exactly the mental model shift you need startup leadership teams to make, and Mollick's credibility makes it easy to cite in talks.</p>
+  </div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://hbr.org/2026/02/9-trends-shaping-work-in-2026-and-beyond">9 Trends Shaping Work in 2026 and Beyond</a></div>
+    <div class="item-meta">
+      <span class="badge badge-leadership">Thought Leadership</span>
+      <span class="source-date">Harvard Business Review · February 2026</span>
+    </div>
+    <p class="summary">HBR's synthesis of the nine most consequential forces reshaping work this year includes skills-based hiring, the rise of AI agent teams, declining trust in AI tools despite increasing adoption, and the collapse of entry-level hiring pipelines. The piece notes that 52% of talent leaders plan to add AI agents to their teams in 2026 — a structural change that most HR functions are not yet designed to support. The authors flag premature layoffs and cultural dissonance as the two most avoidable but most common failure modes in AI-era workforce transitions.</p>
+    <p class="why"><strong>Why it matters:</strong> The premature layoff warning is something founders need to hear directly — this gives you a credible HBR source to anchor that conversation when clients are tempted to cut ahead of AI capability actually materializing.</p>
+  </div>
+
+  <!-- AI & RECRUITING TOOLS -->
+  <div class="section-header">AI &amp; Recruiting Tools</div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-which-ai-model">ChatGPT Agent Mode: The "Little Helper" That Transformed Recruiting</a></div>
+    <div class="item-meta">
+      <span class="badge badge-recruiting">Recruiting</span>
+      <span class="source-date">Lenny's Newsletter · 2026</span>
+    </div>
+    <p class="summary">A practitioner case study from HoneyBook's Michal Peled on deploying ChatGPT's agent mode for LinkedIn recruiting — the system autonomously surfaced candidates that human recruiters had missed and handled initial outreach sequencing. Peled documents the setup, the failure modes they hit early (hallucinated profiles, off-target outreach), and the workflow adjustments that made it reliable. The piece is unusually candid about both wins and the human oversight still required to keep quality high.</p>
+    <p class="why"><strong>Why it matters:</strong> This is the kind of real-world implementation story that early-stage founders find more actionable than vendor case studies — a concrete example of what agentic recruiting actually looks like when a small team deploys it.</p>
+  </div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://hbr.org/2026/01/ai-has-made-hiring-worse-but-it-can-still-help">AI Has Made Hiring Worse — But It Can Still Help</a></div>
+    <div class="item-meta">
+      <span class="badge badge-recruiting">Recruiting</span>
+      <span class="source-date">Harvard Business Review · January 2026</span>
+    </div>
+    <p class="summary">HBR argues that the first wave of AI in hiring created an "automation arms race" — both sides (employers and candidates) are deploying AI in ways that have made the process more inhumane and less predictive of actual job performance. Employers use AI to screen at scale; candidates use AI to mass-apply and polish applications; the result is more volume, worse signal, and declining candidate experience. The piece offers a framework for using AI selectively — at the assessment and onboarding stages rather than sourcing — to improve actual hiring outcomes.</p>
+    <p class="why"><strong>Why it matters:</strong> This directly validates a contrarian position you can take in talks: that AI in hiring has made things worse before they get better, and that the startups winning at talent are the ones being selective about where they deploy it.</p>
+  </div>
+
+  <!-- NEW JOB FAMILIES & ORG DESIGN -->
+  <div class="section-header">New Job Families &amp; Org Design</div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://joshbersin.com/imperatives/">2026 Imperatives: The Superworker Organization</a></div>
+    <div class="item-meta">
+      <span class="badge badge-roles">Org Design</span>
+      <span class="source-date">Josh Bersin · 2026</span>
+    </div>
+    <p class="summary">Bersin's annual imperatives report introduces the "Superworker Organization" as the defining model for 2026: companies where AI superagents handle end-to-end workflows across recruiting, L&D, workforce planning, and scheduling — and human talent focuses on judgment, relationships, and managing those agents. The report details how this reshapes every HR function, including the emergence of roles like "AI Workflow Architect" and "People Data Strategist" that didn't exist two years ago. Bersin argues the transformation is happening faster than most organizations' change management can absorb.</p>
+    <p class="why"><strong>Why it matters:</strong> Bersin's "Superworker" framing gives you a vocabulary for advising founders on how to structure their people function as they scale — and his new role names are exactly the kind of concrete examples that resonate in hiring conversations with early-stage founders.</p>
+  </div>
+
+  <!-- ZONE 2: STILL WORTH YOUR ATTENTION -->
+  <div class="zone-divider">
+    <h2>Still Worth Your Attention</h2>
+    <p>High-value pieces from yesterday — still ranking at the top of the field</p>
+  </div>
+
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it">AI Doesn't Reduce Work — It Intensifies It</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="badge badge-repeat">Seen before</span>
+      <span class="source-date">HBR / UC Berkeley · February 2026</span>
+      <span class="first-seen">First surfaced March 11</span>
+    </div>
+    <p class="summary">UC Berkeley's year-long study of AI adoption across white-collar workforces finds that employees who embraced AI tools increased the volume and variety of their work — but without reductions in hours or cognitive load. The researchers flag a compounding burnout risk: AI removes friction, which prompts workers to take on more, which accelerates cognitive fatigue. Early signs of elevated burnout are appearing specifically among the most enthusiastic AI adopters.</p>
+    <p class="why"><strong>Why it's still here:</strong> This is the counternarrative to the "AI = productivity" story that every founder is telling investors right now — and it's backed by a year-long study, which makes it one of the most credible data points available on AI's actual workforce effects.</p>
+  </div>
+
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://hbr.org/2026/03/when-using-ai-leads-to-brain-fry">When Using AI Leads to "Brain Fry"</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="badge badge-repeat">Seen before</span>
+      <span class="source-date">Harvard Business Review · March 2026</span>
+      <span class="first-seen">First surfaced March 11</span>
+    </div>
+    <p class="summary">This HBR piece examines the cognitive phenomenon of "brain fry" — a state of mental overload reported by workers who rely heavily on AI for cognitively demanding tasks. The research suggests that AI tools, by raising the ceiling on what one person can accomplish, are also raising the cognitive baseline required to use them well — creating a new kind of high-stakes fatigue distinct from traditional burnout. The piece includes practitioner interviews with people ops leaders grappling with how to set norms around AI use intensity.</p>
+    <p class="why"><strong>Why it's still here:</strong> The people ops angle is directly relevant if you're advising founders on building a healthy AI-augmented team culture — this gives you a concrete vocabulary ("brain fry," cognitive load norms) that resonates with operators, not just researchers.</p>
+  </div>
+
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview">Giving Your AI a Job Interview</a></div>
+    <div class="item-meta">
+      <span class="badge badge-leadership">Thought Leadership</span>
+      <span class="badge badge-repeat">Seen before</span>
+      <span class="source-date">Ethan Mollick · 2026</span>
+      <span class="first-seen">First surfaced March 11</span>
+    </div>
+    <p class="summary">Mollick proposes treating AI tool selection with the same rigor applied to hiring decisions — defining the role, running structured capability tests, evaluating fit against actual workflow needs, and setting clear performance expectations. The post includes a practical framework for "interviewing" an AI system before deploying it on high-stakes tasks, including prompts designed to surface failure modes and edge cases. The analogy is deliberately chosen: as AI agents become team members, the skills for evaluating them should mirror the skills for evaluating people.</p>
+    <p class="why"><strong>Why it's still here:</strong> This framework is immediately usable with startup clients who are trying to figure out which AI tools to build their workflows around — it gives you a structured conversation to facilitate, not just a philosophical take.</p>
+  </div>
+
+  <!-- ZONE 3: RECOMMENDED LISTENS -->
+  <div class="section-header">Recommended Listens</div>
+
+  <div class="listen-item">
+    <div class="listen-icon">🎧</div>
+    <div class="listen-body">
+      <div class="listen-title"><a href="https://shows.acast.com/worklife-with-adam-grant/episodes/rethinking-margaret-atwood">ReThinking: Margaret Atwood on What AI Can't Replace</a></div>
+      <div class="listen-meta">
+        <span class="badge badge-podcast">Podcast</span>
+        WorkLife with Adam Grant · January 20, 2026
+      </div>
+      <p class="listen-summary">Adam Grant sits down with Margaret Atwood to break down which creative and intellectual capabilities AI will and won't realistically replace — and what the evidence says about why some human outputs remain distinctly valuable. Atwood is characteristically precise: she's not anti-AI, but she's rigorous about what "creativity" actually requires and where she sees the floor. Grant brings the organizational psychology lens, asking what this means for how companies should value and develop human talent alongside AI.</p>
+      <p class="listen-why"><strong>Why it matters:</strong> When you're speaking to founders about what to hire for vs. automate, this episode gives you a credible, nuanced version of the "protect human judgment" argument — sourced from one of the most intellectually serious voices on the topic.</p>
+    </div>
+  </div>
+
+  <div class="listen-item">
+    <div class="listen-icon">🎧</div>
+    <div class="listen-body">
+      <div class="listen-title"><a href="https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/the-2026-ai-forecast-foundation-models-ipos-and-robotics-with-sarah-guo-and-elad-gil">The 2026 AI Forecast: Foundation Models, IPOs, and Robotics</a></div>
+      <div class="listen-meta">
+        <span class="badge badge-podcast">Podcast</span>
+        No Priors (Sarah Guo &amp; Elad Gil) · December 19, 2025 · ~55 min
+      </div>
+      <p class="listen-summary">Sarah Guo and Elad Gil's annual forecast episode for 2026 covers where they see foundation models heading, which AI companies are IPO-ready, and how robotics will intersect with knowledge work hiring. They predict AI will shift from reactive tools to proactive agents deeply integrated into daily work — knowing what tasks you need before you ask. The episode includes their view on which startup team structures are most defensible as AI capabilities accelerate.</p>
+      <p class="listen-why"><strong>Why it matters:</strong> This is the VC perspective on AI-era team building that your startup clients are hearing from their investors — knowing this framing helps you speak the same language when advising on org design and early hires.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    AI Talent Digest · Curated daily for Krissi Robinson · Sources: HBR, Josh Bersin, Ethan Mollick, Korn Ferry, Lenny's Newsletter, MIT Sloan, Stanford HAI, OpenAI, Anthropic, and more
+  </div>
+</body>
+</html>
