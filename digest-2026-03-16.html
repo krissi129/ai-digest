@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Talent Digest — March 16, 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      background: #f7f7f5;
+      color: #1a1a1a;
+      line-height: 1.65;
+    }
+    .header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #1a1a1a;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+    .header .meta {
+      font-size: 13px;
+      color: #888;
+    }
+    .section-header {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #999;
+      margin: 36px 0 14px;
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-bottom: 10px;
+    }
+    .item-title {
+      font-size: 15px;
+      font-weight: 650;
+      line-height: 1.35;
+      margin-bottom: 7px;
+    }
+    .item-title a {
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .item-title a:hover { border-color: #1a1a1a; }
+    .item-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+    .badge-research  { background: #e6f4e6; color: #1e7e1e; }
+    .badge-recruiting { background: #e6edf8; color: #1a47a0; }
+    .badge-leadership { background: #fdf0e0; color: #9a5500; }
+    .badge-roles     { background: #f2e8f8; color: #6a1aaa; }
+    .badge-ai        { background: #fde8e8; color: #aa1a1a; }
+    .badge-podcast   { background: #e0f5f5; color: #0a7a7a; }
+    .badge-toppick   { background: #1a1a1a; color: #fff; }
+    .badge-repeat    { background: #f5f5f0; color: #888; }
+    .zone-divider {
+      margin: 40px 0 0;
+      padding: 16px 20px;
+      background: #f0efe8;
+      border-radius: 10px;
+      border: 1px solid #e4e2d8;
+    }
+    .zone-divider h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: #555;
+      margin: 0 0 3px;
+    }
+    .zone-divider p {
+      font-size: 12px;
+      color: #999;
+      margin: 0;
+    }
+    .repeat-item {
+      background: #fafaf7;
+      border: 1px solid #e8e6dc;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 10px;
+    }
+    .first-seen { font-size: 11px; color: #bbb; margin-left: 2px; }
+    .listen-item {
+      background: #fff;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .listen-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .listen-body { flex: 1; }
+    .listen-title {
+      font-size: 15px;
+      font-weight: 650;
+      line-height: 1.35;
+      margin-bottom: 5px;
+    }
+    .listen-title a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+    .listen-title a:hover { border-color: #1a1a1a; }
+    .listen-meta { font-size: 12px; color: #aaa; margin-bottom: 8px; }
+    .listen-summary { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 8px; }
+    .listen-why { font-size: 13px; color: #777; font-style: italic; border-left: 3px solid #e8e8e8; padding-left: 12px; }
+    .source-date {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .summary {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .why {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.55;
+      border-left: 3px solid #e8e8e8;
+      padding-left: 12px;
+      font-style: italic;
+    }
+    .why strong { color: #555; font-style: normal; }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e8e8e8;
+      font-size: 11px;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>AI Talent Digest</h1>
+    <div class="meta">Monday, March 16, 2026 &nbsp;·&nbsp; 9 items &nbsp;·&nbsp; ranked by relevance</div>
+  </div>
+
+  <!-- RESEARCH & REPORTS -->
+  <div class="section-header">Research &amp; Reports</div>
+
+  <!-- TOP PICK -->
+  <div class="item">
+    <div class="item-title"><a href="https://fortune.com/2026/03/13/ai-isnt-reducing-workloads-its-straining-employees-time-spent-emailing-doubled-deep-focus-work-fell/" target="_blank">AI Isn't Reducing Workloads—It's Straining Employees</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="badge badge-toppick">Top Pick</span>
+      <span class="source-date">Fortune · March 13, 2026</span>
+    </div>
+    <p class="summary">An ActivTrak analysis of 10,584 workers before and after AI adoption found that time spent emailing doubled and deep focus work sessions fell by 9%. Workers are spending more cognitive energy coordinating with and reviewing AI outputs rather than doing their core work. The data directly contradicts the assumption that AI tools naturally shift employee time toward higher-value tasks.</p>
+    <p class="why"><strong>Why it matters:</strong> This is the counternarrative every founder pitching "AI will free up my team" needs to hear—useful ammunition for Krissi's advising conversations on realistic AI adoption planning and avoiding productivity theater.</p>
+  </div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://www.gartner.com/en/newsroom/press-releases/2025-10-07-gartner-says-ai-revolution-and-cost-pressures-are-two-forces-driving-the-top-four-trends-for-talent-acquisition-in-2026" target="_blank">Gartner: The Top Four Talent Acquisition Trends for 2026</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="source-date">Gartner · October 2025</span>
+    </div>
+    <p class="summary">Gartner's TA research identifies four trends reshaping recruiting: AI-first hiring for high-volume frontline roles, recruiter role evolution toward strategic advisory, a mandatory rethink of early-career pipelines as entry-level jobs evaporate, and AI proficiency assessment entering the hiring process. By 2027, Gartner predicts 75% of hiring processes will include formal AI skills certification.</p>
+    <p class="why"><strong>Why it matters:</strong> The recruiter-as-strategic-advisor shift is directly relevant for Krissi's clients deciding whether to invest in upskilling their existing TA team or rebuild from scratch—and the entry-level pipeline collapse is material for any startup scaling fast.</p>
+  </div>
+
+  <!-- NEW JOB FAMILIES & ORG DESIGN -->
+  <div class="section-header">New Job Families &amp; Org Design</div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://opendatascience.com/from-context-engineers-to-chief-ai-officers-emerging-ai-job-roles-for-2026/" target="_blank">From Context Engineers to Chief AI Officers: Emerging AI Job Roles for 2026</a></div>
+    <div class="item-meta">
+      <span class="badge badge-roles">New Roles</span>
+      <span class="source-date">Open Data Science · January 2026</span>
+    </div>
+    <p class="summary">A detailed breakdown of six AI-native roles gaining traction in 2026: Context Engineers who architect information pipelines so AI has the right data at the right time; RAG Engineers who reduce model hallucinations (commanding £110k–£180k salaries); AI Governance Directors focused on bias and EU AI Act compliance; and AI GTM Engineers who blend technical depth with commercial execution. Each role includes responsibilities and salary benchmarks.</p>
+    <p class="why"><strong>Why it matters:</strong> Startup founders asking Krissi "what should my first five AI hires look like?" now have concrete role definitions—and the Context Engineer framing is particularly useful for explaining why traditional software engineering job descriptions don't translate.</p>
+  </div>
+
+  <!-- THOUGHT LEADERSHIP -->
+  <div class="section-header">Thought Leadership</div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://hbr.org/2026/03/why-gen-ai-feels-so-threatening-to-workers" target="_blank">Why Gen AI Feels So Threatening to Workers</a></div>
+    <div class="item-meta">
+      <span class="badge badge-leadership">Thought Leadership</span>
+      <span class="source-date">Harvard Business Review · March 2026</span>
+    </div>
+    <p class="summary">HBR examines the psychological roots of AI workplace anxiety, distinguishing three distinct threat types: threat to identity (AI undermines what makes me uniquely valuable), threat to job security (AI will replace me), and threat to mastery (AI makes my expertise feel irrelevant). Workers experiencing identity threat show higher disengagement than those worried purely about job loss—and are harder to retain even when their roles are safe.</p>
+    <p class="why"><strong>Why it matters:</strong> Founders need this framework when onboarding new hires into AI-forward teams—understanding which threat type an employee is experiencing determines how to communicate and manage the transition effectively.</p>
+  </div>
+
+  <!-- AI & RECRUITING TOOLS -->
+  <div class="section-header">AI &amp; Recruiting Tools</div>
+
+  <div class="item">
+    <div class="item-title"><a href="https://www.bristowholland.com/insights/industry-insights/ai-talent-vs-ai-tools-what-early-stage-startups-should-actually-hire-for-in-2026/" target="_blank">AI Talent vs. AI Tools: What Early-Stage Startups Should Actually Hire For in 2026</a></div>
+    <div class="item-meta">
+      <span class="badge badge-recruiting">Recruiting</span>
+      <span class="source-date">Bristow Holland · 2026</span>
+    </div>
+    <p class="summary">A practical decision framework for early-stage founders: hire humans where their judgment has outsized business impact—AI engineers who refine models, data engineers who ensure data quality, and forward-deployed engineers who adapt AI tools to customer problems. Roles where off-the-shelf AI already performs adequately (e.g., basic content, templated customer support) shouldn't be staffed with expensive human talent in 2026.</p>
+    <p class="why"><strong>Why it matters:</strong> This maps directly to the conversations Krissi has with seed and Series A founders deciding their first five hires—gives her a shareable, concrete framework rather than general guidance.</p>
+  </div>
+
+  <!-- STILL WORTH YOUR ATTENTION -->
+  <div class="zone-divider">
+    <h2>Still Worth Your Attention</h2>
+    <p>High-value pieces from recent issues — still ranking top of the field</p>
+  </div>
+
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://hbr.org/2026/03/when-using-ai-leads-to-brain-fry" target="_blank">When Using AI Leads to "Brain Fry"</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="badge badge-repeat">Seen before</span>
+      <span class="source-date">Harvard Business Review · March 5, 2026</span>
+      <span class="first-seen">First surfaced March 11</span>
+    </div>
+    <p class="summary">A BCG-backed HBR study defines "brain fry" as cognitive fatigue from constant AI tool oversight—affecting about 1 in 7 workers. High performers managing multiple AI systems report more errors and a ~10% higher intent to quit. Workers who use AI only to automate routine tasks (vs. those who use it to expand task volume) actually see lower burnout scores.</p>
+    <p class="why"><strong>Why it's still here:</strong> Today's Fortune workload data validates this from a different angle—together these two pieces form the most compelling current evidence that AI is creating a new kind of burnout that startup leaders aren't designing for yet.</p>
+  </div>
+
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://www.oneusefulthing.org/p/management-as-ai-superpower" target="_blank">Management as AI Superpower</a></div>
+    <div class="item-meta">
+      <span class="badge badge-leadership">Thought Leadership</span>
+      <span class="badge badge-repeat">Seen before</span>
+      <span class="source-date">One Useful Thing (Ethan Mollick) · January 27, 2026</span>
+      <span class="first-seen">First surfaced March 11</span>
+    </div>
+    <p class="summary">Mollick's Wharton MBA class built complete startups in four days using AI agents. The highest performers weren't the strongest coders—they were the students who could clearly define goals, delegate precisely, and quality-check outputs at speed. The insight: traditional management skills—clarity, accountability, feedback—are the competitive differentiator in agentic AI workflows.</p>
+    <p class="why"><strong>Why it's still here:</strong> Remains the single most quotable piece for Krissi's speaking work on what leadership looks like when AI does the execution—especially powerful paired with today's Gartner data on recruiter role evolution.</p>
+  </div>
+
+  <!-- RECOMMENDED LISTENS -->
+  <div class="section-header">Recommended Listens</div>
+
+  <div class="listen-item">
+    <div class="listen-icon">🎧</div>
+    <div class="listen-body">
+      <div class="listen-title"><a href="https://www.lennysnewsletter.com/p/we-replaced-our-sales-team-with-20-ai-agents" target="_blank">We Replaced Our Sales Team With 20 AI Agents—Here's What Happened Next</a></div>
+      <div class="listen-meta">
+        <span class="badge badge-podcast">Podcast</span>
+        Lenny's Podcast · January 1, 2026
+      </div>
+      <p class="listen-summary">Jason Lemkin (SaaStr founder) describes the moment he decided to replace his entire go-to-market team with 20 AI agents managed by 1.2 humans, after his last salesperson quit mid-event. The agents now handle outbound prospecting, inbound qualification, and follow-up 24/7. Lemkin is candid about what broke, what worked, and why he says "we're done hiring humans in sales."</p>
+      <p class="listen-why"><strong>Why it matters:</strong> One of the most concrete real-world examples of deliberate AI workforce replacement—essential listening before any conversation with a founder considering their first sales hire in 2026.</p>
+    </div>
+  </div>
+
+  <div class="listen-item">
+    <div class="listen-icon">🎧</div>
+    <div class="listen-body">
+      <div class="listen-title"><a href="https://open.spotify.com/show/44fllCS2FTFr2x2kjP9xeT" target="_blank">Something Big Is Happening + AI's Impact on the Labor Market</a></div>
+      <div class="listen-meta">
+        <span class="badge badge-podcast">Podcast</span>
+        Hard Fork (NYT) · February 13, 2026
+      </div>
+      <p class="listen-summary">Kevin Roose and Casey Newton discuss Matt Shumer's viral essay comparing this AI labor moment to early COVID—visible disruption whose full economic scale hasn't been measured yet. The episode covers Wall Street's sell-off in software stocks tied to AI margin compression and why the "it'll create more jobs than it destroys" framing is starting to feel strained.</p>
+      <p class="listen-why"><strong>Why it matters:</strong> Captures the macro anxiety that now enters every room Krissi speaks in—useful for calibrating how to open a talk or advisory conversation with an audience that's already unsettled about AI and jobs.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    AI Talent Digest · Curated daily for Krissi Robinson · Sources: Fortune, Gartner, HBR, Ethan Mollick, ODSC, Bristow Holland, Lenny's Podcast, Hard Fork · March 16, 2026
+  </div>
+
+</body>
+</html>
