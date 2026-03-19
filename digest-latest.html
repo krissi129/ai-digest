@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Talent Digest — Friday, March 13, 2026</title>
+  <title>AI Talent Digest — March 19, 2026</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; max-width: 680px; margin: 0 auto; padding: 48px 24px; background: #f7f7f5; color: #1a1a1a; line-height: 1.65; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      background: #f7f7f5;
+      color: #1a1a1a;
+      line-height: 1.65;
+    }
     .header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 2px solid #1a1a1a; }
     .header h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 4px; }
     .header .meta { font-size: 13px; color: #888; }
     .section-header { font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #999; margin: 36px 0 14px; }
     .item { background: #fff; border: 1px solid #ebebeb; border-radius: 10px; padding: 20px 22px; margin-bottom: 10px; }
     .item-title { font-size: 15px; font-weight: 650; line-height: 1.35; margin-bottom: 7px; }
-    .item-title a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+    .item-title a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
     .item-title a:hover { border-color: #1a1a1a; }
     .item-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
     .badge { display: inline-block; font-size: 9px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; }
@@ -21,163 +29,120 @@
     .badge-recruiting { background: #e6edf8; color: #1a47a0; }
     .badge-leadership { background: #fdf0e0; color: #9a5500; }
     .badge-roles     { background: #f2e8f8; color: #6a1aaa; }
+    .badge-ai        { background: #fde8e8; color: #aa1a1a; }
     .badge-podcast   { background: #e0f5f5; color: #0a7a7a; }
     .badge-toppick   { background: #1a1a1a; color: #fff; }
     .badge-repeat    { background: #f5f5f0; color: #888; }
-    .source-date { font-size: 12px; color: #aaa; }
-    .summary { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 10px; }
-    .why { font-size: 13px; color: #777; line-height: 1.55; border-left: 3px solid #e8e8e8; padding-left: 12px; font-style: italic; }
-    .why strong { color: #555; font-style: normal; }
     .zone-divider { margin: 40px 0 0; padding: 16px 20px; background: #f0efe8; border-radius: 10px; border: 1px solid #e4e2d8; }
-    .zone-divider h2 { font-size: 13px; font-weight: 700; color: #555; margin: 0 0 3px; }
+    .zone-divider h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.3px; color: #555; margin: 0 0 3px; }
     .zone-divider p { font-size: 12px; color: #999; margin: 0; }
     .repeat-item { background: #fafaf7; border: 1px solid #e8e6dc; border-radius: 10px; padding: 18px 22px; margin-bottom: 10px; }
-    .first-seen { font-size: 11px; color: #bbb; margin-left: 2px; }
+    .first-seen { font-size: 11px; color: #bbb; margin-left: 6px; }
     .listen-item { background: #fff; border: 1px solid #ebebeb; border-radius: 10px; padding: 18px 22px; margin-bottom: 10px; display: flex; gap: 16px; align-items: flex-start; }
     .listen-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
     .listen-body { flex: 1; }
     .listen-title { font-size: 15px; font-weight: 650; line-height: 1.35; margin-bottom: 5px; }
     .listen-title a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; }
+    .listen-title a:hover { border-color: #1a1a1a; }
     .listen-meta { font-size: 12px; color: #aaa; margin-bottom: 8px; }
     .listen-summary { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 8px; }
     .listen-why { font-size: 13px; color: #777; font-style: italic; border-left: 3px solid #e8e8e8; padding-left: 12px; }
+    .source-date { font-size: 12px; color: #aaa; }
+    .summary { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 10px; }
+    .why { font-size: 13px; color: #777; line-height: 1.55; border-left: 3px solid #e8e8e8; padding-left: 12px; font-style: italic; }
+    .why strong { color: #555; font-style: normal; }
     .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e8e8e8; font-size: 11px; color: #bbb; text-align: center; }
   </style>
 </head>
 <body>
   <div class="header">
     <h1>AI Talent Digest</h1>
-    <div class="meta">Friday, March 13, 2026 &nbsp;·&nbsp; 10 items &nbsp;·&nbsp; ranked by relevance</div>
+    <div class="meta">Thursday, March 19, 2026 &nbsp;&middot;&nbsp; 7 items &nbsp;&middot;&nbsp; ranked by relevance</div>
   </div>
 
   <div class="section-header">Research &amp; Reports</div>
 
   <div class="item">
-    <div class="item-title"><a href="https://sloanreview.mit.edu/article/why-ai-demands-a-new-breed-of-leaders/">Why AI Demands a New Breed of Leaders</a></div>
+    <div class="item-title"><a href="https://www.bcg.com/news/5march2026-when-using-ai-leads-brain-fry">When Using AI Leads to Brain Fry</a></div>
     <div class="item-meta">
       <span class="badge badge-research">Research</span>
       <span class="badge badge-toppick">Top Pick</span>
-      <span class="source-date">MIT Sloan Management Review · 2026</span>
+      <span class="source-date">BCG &middot; Mar 5, 2026</span>
     </div>
-    <p class="summary">MIT Sloan research identifies a distinct leadership profile required for the AI era — one that diverges sharply from traditional executive competencies. The study finds the most critical traits are systems thinking across the enterprise, ability to build trust between human teams and AI, and comfort with genuine ambiguity (not managed ambiguity). The findings are stark: only 11% of organizations report that their leaders are well-prepared to navigate the AI transition, yet 62% plan major AI-driven workforce changes in the next 18 months.</p>
-    <p class="why"><strong>Why it matters:</strong> The 11% leadership readiness stat is a headline you can open any talk with — and it directly anchors the case for leadership hiring and development being the first thing AI startups should invest in, not the last.</p>
-  </div>
-
-  <div class="item">
-    <div class="item-title"><a href="https://hbr.org/2026/01/companies-are-laying-off-workers-because-of-ais-potential-not-its-performance">Companies Are Laying Off Workers Because of AI's Potential — Not Its Performance</a></div>
-    <div class="item-meta">
-      <span class="badge badge-research">Research</span>
-      <span class="source-date">Harvard Business Review · January 2026</span>
-    </div>
-    <p class="summary">HBR examines the dangerous mismatch driving 2026's AI-related layoffs: organizations are cutting headcount based on what AI might do, not what it demonstrably does today. Gartner data underpins the piece — only 1 in 50 AI investments delivers transformational value, and only 1 in 5 delivers any measurable ROI — yet CEO optimism is driving workforce decisions as if those numbers were inverted. The piece documents several companies that made deep cuts and then quietly backfilled when AI underdelivered.</p>
-    <p class="why"><strong>Why it matters:</strong> When your startup clients feel pressure to announce AI-driven reductions because competitors are doing it, this is the data that helps them slow down — and it positions you as the advisor who saved them from a costly mistake.</p>
+    <p class="summary">BCG's landmark study on AI-related cognitive exhaustion finds that 14% of workers — concentrated in marketing, software development, HR, finance, and IT — report significant mental fatigue from AI tool overuse. Crucially, productivity follows an inverted-U curve: it rises with 1–3 AI tools, then falls sharply at 4 or more. Symptoms include mental fog, difficulty focusing, slower decision-making, and headaches. Two factors materially reduce the effect: manager support (cuts fatigue by 15%) and a genuine work-life balance culture (cuts it by 28%).</p>
+    <p class="why"><strong>Why it matters:</strong> For founders aggressively rolling out AI tooling across their teams, this is the first rigorous data showing that more AI tools do not equal more productivity — and that the mitigation is managerial, not technical, which reframes how you help clients think about AI adoption strategy.</p>
   </div>
 
   <div class="section-header">Thought Leadership</div>
 
   <div class="item">
-    <div class="item-title"><a href="https://hbr.org/2026/03/the-last-mile-problem-slowing-ai-transformation">The "Last Mile" Problem Slowing AI Transformation</a></div>
+    <div class="item-title"><a href="https://joshbersin.com/2026/01/the-great-reinvention-of-human-resources-has-begun/">The Great Reinvention of Human Resources Has Begun</a></div>
     <div class="item-meta">
       <span class="badge badge-leadership">Thought Leadership</span>
-      <span class="source-date">Harvard Business Review · March 2026</span>
+      <span class="source-date">Josh Bersin &middot; Jan 2026</span>
     </div>
-    <p class="summary">The biggest obstacle to enterprise AI isn't the technology — it's the final step of embedding AI into actual human workflows. This piece examines why AI pilots succeed but org-wide rollouts stall: integration complexity, change resistance, and the gap between what AI can do in demos vs. what workers will adopt in practice. The authors propose a "last mile playbook" that treats adoption as a behavior-change problem, not a tooling problem — and identifies the specific roles responsible for bridging that gap.</p>
-    <p class="why"><strong>Why it matters:</strong> Every founder building an AI-forward org will hit this wall — the "last mile" framing gives you a concrete lens for advising on AI adoption strategy, and the roles it identifies are ones you can help clients hire for.</p>
+    <p class="summary">Bersin argues 2026 is the year AI stops being a productivity layer and starts fundamentally restructuring HR as a function: AI agents and "Superagents" will automate 30–40% of today's HR roles, and HR Business Partners must evolve from administrators into strategic advisors. He frames this as a shift to "full-stack HR" — AI handles transactional work, humans own judgment, relationships, and change management. The goal is not headcount reduction but unlocking HR's business-value potential through scale and accuracy.</p>
+    <p class="why"><strong>Why it matters:</strong> When startup founders ask how to think about building their People function in an AI-first world, this is the clearest current map — and it directly challenges the assumption that HR headcount should scale linearly with company size.</p>
   </div>
 
-  <div class="item">
-    <div class="item-title"><a href="https://sloanreview.mit.edu/article/ai-unlocks-new-power-for-employees-are-hr-leaders-ready/">AI Unlocks New Power for Employees: Are HR Leaders Ready?</a></div>
-    <div class="item-meta">
-      <span class="badge badge-leadership">Thought Leadership</span>
-      <span class="source-date">Josh Bersin / MIT Sloan Management Review · 2026</span>
-    </div>
-    <p class="summary">Writing in MIT Sloan, Josh Bersin argues that AI is creating a new class of "superemployees" — individuals who, with the right tools and training, can perform work that previously required teams. The challenge is that HR systems (L&D, performance management, compensation) are still designed for the old model of individual job performance and are not built to identify, reward, or develop superemployees. Bersin calls for a fundamental redesign of HR's core systems, not incremental AI feature add-ons.</p>
-    <p class="why"><strong>Why it matters:</strong> If your startup clients are hiring lean and AI-augmented, their HR infrastructure is almost certainly already outdated — this piece gives you a framework and vocabulary for that specific conversation.</p>
-  </div>
-
-  <div class="item">
-    <div class="item-title"><a href="https://sloanreview.mit.edu/article/five-trends-in-ai-and-data-science-for-2026/">Five Trends in AI and Data Science for 2026</a></div>
-    <div class="item-meta">
-      <span class="badge badge-leadership">Thought Leadership</span>
-      <span class="source-date">MIT Sloan Management Review (Davenport &amp; Bean) · 2026</span>
-    </div>
-    <p class="summary">Tom Davenport and Randy Bean's annual forecast identifies five trends: the rise of agentic AI, increased focus on governance, the shift from AI-as-tool to AI-as-colleague, growing demand for human oversight roles, and the emergence of domain-specific fine-tuned models. The piece finds that organizations that moved carefully on AI governance are now pulling measurably ahead of those that moved fast without guardrails — reversing a pattern that held for most of 2024–25.</p>
-    <p class="why"><strong>Why it matters:</strong> "Human oversight roles" is a new job family trend you can name and spec for clients right now — and the governance-wins-long-term finding is a direct counterargument to the move-fast-with-AI pressure most founders are under.</p>
-  </div>
-
-  <!-- ZONE 2 -->
   <div class="zone-divider">
     <h2>Still Worth Your Attention</h2>
-    <p>Top-ranked pieces from earlier this week — still the best available on these topics</p>
+    <p>High-value pieces you've seen before — still ranking top of the field</p>
   </div>
 
-  <div class="repeat-item" style="margin-top: 10px;">
-    <div class="item-title"><a href="https://www.oneusefulthing.org/p/the-shape-of-the-thing">The Shape of the Thing</a></div>
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it">AI Doesn't Reduce Work — It Intensifies It</a></div>
+    <div class="item-meta">
+      <span class="badge badge-research">Research</span>
+      <span class="badge badge-repeat">Seen before</span>
+      <span class="source-date">HBR / UC Berkeley &middot; Feb 2026</span>
+      <span class="first-seen">First surfaced Mar 11</span>
+    </div>
+    <p class="summary">UC Berkeley's study inside a 200-person tech company documents the "AI workload creep" cycle: AI makes more work feasible, available capacity fills immediately with new tasks, and work bleeds into personal time. Burnout runs at 62% among associates vs. 38% among C-suite — meaning the burden lands hardest on early-career workers. Researchers recommend an intentional "AI practice" with explicit organizational norms about when not to use AI.</p>
+    <p class="why"><strong>Why it's still here:</strong> Today's BCG brain fry study is its direct companion — together they form a two-study case that AI-driven burnout is now empirically established, and every founder rolling out AI tooling needs a deliberate adoption framework.</p>
+  </div>
+
+  <div class="repeat-item">
+    <div class="item-title"><a href="https://www.oneusefulthing.org/p/management-as-ai-superpower">Management as AI Superpower</a></div>
     <div class="item-meta">
       <span class="badge badge-leadership">Thought Leadership</span>
       <span class="badge badge-repeat">Seen before</span>
-      <span class="source-date">Ethan Mollick · March 12, 2026</span>
-      <span class="first-seen">First surfaced March 12</span>
+      <span class="source-date">One Useful Thing / Ethan Mollick &middot; 2026</span>
+      <span class="first-seen">First surfaced Mar 11</span>
     </div>
-    <p class="summary">Mollick's piece marking the shift from "working with AI" to "managing AI" — agents now take multi-hour tasks and return completed work in minutes, making assignment and evaluation the new highest-leverage management skills.</p>
-    <p class="why"><strong>Why it's still here:</strong> Published yesterday and already the sharpest articulation available of the management-layer shift — keep it close if you're building talk content this week.</p>
+    <p class="summary">Mollick's argument: the highest-leverage skill in the AI era isn't technical fluency — it's the ability to direct, evaluate, and orchestrate AI agents at scale, which maps directly onto traditional management competencies. Managers who can set context, delegate to AI, and quality-check outputs will outperform both non-AI users and solo technical contributors. The thesis is that good management is, structurally, what AI collaboration requires.</p>
+    <p class="why"><strong>Why it's still here:</strong> As founders ask what to look for when hiring managers in AI-first orgs, this piece provides the framework — management as the meta-skill, not AI proficiency — and pairs directly with the Bersin HR Reinvention piece above.</p>
   </div>
 
   <div class="repeat-item">
-    <div class="item-title"><a href="https://hbr.org/2026/03/research-how-ai-is-changing-the-labor-market">Research: How AI Is Changing the Labor Market</a></div>
+    <div class="item-title"><a href="https://hbr.org/2026/01/ai-has-made-hiring-worse-but-it-can-still-help">AI Has Made Hiring Worse — But It Can Still Help</a></div>
     <div class="item-meta">
-      <span class="badge badge-research">Research</span>
+      <span class="badge badge-recruiting">Recruiting</span>
       <span class="badge badge-repeat">Seen before</span>
-      <span class="source-date">Harvard Business Review · March 2026</span>
-      <span class="first-seen">First surfaced March 12</span>
+      <span class="source-date">HBR &middot; Jan 2026</span>
+      <span class="first-seen">First surfaced Mar 12</span>
     </div>
-    <p class="summary">HBR synthesizes empirical AI labor market findings: hybrid human-AI workflows outperform pure automation, entry-level white-collar roles face the most structural pressure, and demand is surging for workers who can direct and evaluate AI output.</p>
-    <p class="why"><strong>Why it's still here:</strong> Still the cleanest data-backed answer to "should we hire humans or deploy AI agents?" — a question you'll hear from every founder this quarter.</p>
+    <p class="summary">HBR's audit of AI in hiring finds that most deployed tools have made screening faster but less accurate — increasing volume while amplifying bias and screening out strong non-standard candidates. The analysis separates where AI genuinely helps (scheduling, outreach, job description optimization) from where it actively hurts (resume screening, structured interview scoring). The piece offers a framework for which hiring stages to automate and which to protect.</p>
+    <p class="why"><strong>Why it's still here:</strong> Essential reading before any advisory conversation with founders evaluating AI recruiting tools — gives you the precise taxonomy of where these tools earn their keep vs. where they create legal and quality risk.</p>
   </div>
 
-  <div class="repeat-item">
-    <div class="item-title"><a href="https://www.kornferry.com/insights/featured-topics/talent-recruitment/ai-in-recruitment-trends">TA Trends 2026: Human–AI Power Couple</a></div>
-    <div class="item-meta">
-      <span class="badge badge-research">Research</span>
-      <span class="badge badge-repeat">Seen before</span>
-      <span class="source-date">Korn Ferry · 2026</span>
-      <span class="first-seen">First surfaced March 12</span>
-    </div>
-    <p class="summary">84% of talent leaders will use AI in hiring in 2026; 52% plan to add autonomous AI agents as team members. Human-AI hybrid orgs are outperforming on time-to-hire and candidate quality.</p>
-    <p class="why"><strong>Why it's still here:</strong> The benchmark report for TA in 2026 — the numbers are credible and widely cited, which makes them useful in any conversation about what a modern recruiting function should look like.</p>
-  </div>
-
-  <!-- ZONE 3 -->
   <div class="section-header">Recommended Listens</div>
 
   <div class="listen-item">
-    <div class="listen-icon">🎧</div>
+    <div class="listen-icon">&#127911;</div>
     <div class="listen-body">
-      <div class="listen-title"><a href="https://podcasts.apple.com/us/podcast/hard-fork/id1528594034">Hard Fork Ep. 183: Economist Anton Korinek on "Ghost GDP" and AI's Labor Market Reality</a></div>
+      <div class="listen-title"><a href="https://www.lennysnewsletter.com/p/land-your-dream-job-phyl-terry">Land Your Dream Job in Today's Market: Negotiation Tactics, Job Search Councils, and More</a></div>
       <div class="listen-meta">
         <span class="badge badge-podcast">Podcast</span>
-        Hard Fork (NYT) · March 1, 2026
+        Lenny's Podcast &middot; Phyl Terry ("Never Search Alone")
       </div>
-      <p class="listen-summary">Economist Anton Korinek joins Kevin Roose and Casey Newton to unpack the growing disconnect between AI's rapid technical progress and its still-limited observable economic impact. He introduces the concept of "Ghost GDP" — value being created by AI that existing economic metrics simply can't yet measure — and explains why this gap is causing confusion for policymakers, investors, and workers alike. The episode is surprisingly nuanced on why mass job displacement hasn't materialized on the timeline many predicted.</p>
-      <p class="listen-why"><strong>Why it matters:</strong> "Ghost GDP" is a concept that will come up in every serious conversation about AI's economic effects — understanding Korinek's framing will make you significantly sharper in the rooms where startup founders and investors are debating whether to hire or automate.</p>
-    </div>
-  </div>
-
-  <div class="listen-item">
-    <div class="listen-icon">🎧</div>
-    <div class="listen-body">
-      <div class="listen-title"><a href="https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688">No Priors: Jensen Huang on AI, Productivity, and Whether Robots Take Jobs</a></div>
-      <div class="listen-meta">
-        <span class="badge badge-podcast">Podcast</span>
-        No Priors (Sarah Guo &amp; Elad Gil) · January 8, 2026 · ~55 min
-      </div>
-      <p class="listen-summary">NVIDIA CEO Jensen Huang joins Sarah Guo and Elad Gil for a wide-ranging conversation on the state of AI entering 2026 — including the biggest surprises of 2025, the profitability of inference tokens, and his view on whether AI will create or destroy jobs. Jensen argues AI will increase productivity without necessarily displacing workers, and explains how physical AI and robotics can address labor shortages rather than exacerbate them — a position not everyone agrees with, but one your clients will encounter constantly.</p>
-      <p class="listen-why"><strong>Why it matters:</strong> Jensen's perspective on AI and employment is shaping how the most influential founders and investors are thinking about workforce strategy — knowing his framing, and where to push back on it, makes you a sharper advisor.</p>
+      <p class="listen-summary">Phyl Terry — founding team at the first company Amazon acquired, now author of "Never Search Alone" — walks through her structured job-search framework for an AI-disrupted labor market. Core concepts: Job Search Councils (free peer groups of 6–8, thousands launched since 2022), "candidate-market fit" as a diagnostic lens, listening tours, and principled offer negotiation. Terry's core argument is that solo job hunting is structurally broken, and the people finding roles fastest are those seeking collective intelligence.</p>
+      <p class="listen-why"><strong>Why it matters:</strong> As more of your network navigates layoffs and transition — and as your startup clients think about how candidates are showing up in their pipelines — this reframes the job search experience in a way that's directly useful for coaching conversations on both sides of the table.</p>
     </div>
   </div>
 
   <div class="footer">
-    AI Talent Digest · Curated daily for Krissi Robinson · Sources: MIT Sloan, HBR, Josh Bersin, Ethan Mollick, Korn Ferry, Hard Fork, No Priors, and more
+    AI Talent Digest &middot; Curated daily for Krissi Robinson &middot; Sources: HBR, Josh Bersin, Molly Graham, Recruiting Brainfood, MIT Sloan, Ethan Mollick, OpenAI, Anthropic, and more
   </div>
 </body>
 </html>
